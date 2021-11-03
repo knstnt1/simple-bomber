@@ -24,7 +24,7 @@ def run():
         head = {'User-Agent': generate_user_agent(), 'X-Requested-With': 'XMLHttpRequest'}
     
         try:
-            response = requests.post('https://megogo.net/ua/auth_login'), json ={'phone': password}, headers = head)
+            response = requests.post('https://megogo.net/ua/auth_login', json ={'phone': password}, headers = head)
             print('MEGOGO: ' + good)
         except Exception:
             print(bad)
